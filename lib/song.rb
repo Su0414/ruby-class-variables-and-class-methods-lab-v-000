@@ -25,6 +25,12 @@ class  Song
   end 
   
   def self.genre_count 
+    gcount = 0
+    if @@genres.include? genre
+    
+    else 
+          
+    end
     
   end 
   
