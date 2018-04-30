@@ -38,11 +38,7 @@ class  Song
     binding.pry
     
     @@genres.each{|gtype|
-    if ghash.include? gtype
       ghash[gtype] = @@genres.count(gtype)
-    else
-      ghash[gtype] = {}
-    end 
     }
     puts ghash
     return ghash
