@@ -31,17 +31,18 @@ class  Song
   
   def self.genre_count 
     gcount = 0
-    if @@genres.include? @genre
+    
+    @@genres.each { |genres|
+    if genres.include? @genre
       gcount += 1
     else 
       ghash = {}
       ghash[@genre] = @genre
       
-      @@genres << ghash
+      genres << ghash
       gcount += 1
-          
     end
-    
+    }
     return gcount
   end 
   
