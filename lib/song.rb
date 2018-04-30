@@ -30,19 +30,23 @@ class  Song
   end 
   
   def self.genre_count 
-    gcount = 0
     
+    gcount = 0
+    ghash = {}
+    
+    @@genres.each{
     if @@genres.include? @genre
       gcount += 1
+      ghash[@genre] = gcount
     else 
-      ghash = {}
-      ghash[@genre] = @genre
-      
-      @@genres << ghash
+      ghash[@genre] = {}
       gcount += 1
+      ghash[@genre] = gcount
     end
+    puts ghash
+    return ghash
     }
-    return gcount
+   
   end 
   
   def self.artist_count
