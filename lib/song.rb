@@ -37,7 +37,7 @@ class  Song
     @@genres.each{|gtype|
       ghash[gtype] = @@genres.count(gtype)
     }
-    puts ghash
+    #puts ghash
     return ghash
    
   end 
@@ -48,7 +48,7 @@ class  Song
     @@artists.each{|atype|
       ahash[atype] = @@artists.count(atype)
     }
-    puts ahash
+    #puts ahash
     return ahash
   end 
   
