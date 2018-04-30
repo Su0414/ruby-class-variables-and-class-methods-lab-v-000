@@ -37,7 +37,7 @@ class  Song
     
     binding.pry
     
-    gcount = @@genres
+    ghash = @@genres.collect
     binding.pry
     ghash[@genre] = gcount
     binding.pry
