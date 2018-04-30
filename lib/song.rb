@@ -35,9 +35,13 @@ class  Song
     gcount = 0
     ghash = {}
     
-    binding.pry
+    #binding.pry
     
-    @@genres.count() {|gtype|}
+    gcount = @@genres.count(@genre)
+    ghash [@genre] << gcount
+    
+    puts ghash
+    return ghash
    
   end 
   
