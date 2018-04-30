@@ -33,13 +33,13 @@ class  Song
     gcount = 0
     
     @@genres.each { |genres|
-    if genres.include? @genre
+    if @@genres.include? @genre
       gcount += 1
     else 
       ghash = {}
       ghash[@genre] = @genre
       
-      genres << ghash
+      @@genres << ghash
       gcount += 1
     end
     }
