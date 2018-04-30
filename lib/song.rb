@@ -46,7 +46,7 @@ class  Song
     ahash = {}
     
     @@artists.each{|atype|
-      ghash[atype] = @@artists.count(atype)
+      ahash[atype] = @@artists.count(atype)
     }
     puts ahash
     return ahash
