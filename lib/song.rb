@@ -1,3 +1,4 @@
+require 'pry'
 class  Song 
   
   attr_accessor :name, :artist, :genre 
@@ -33,6 +34,8 @@ class  Song
     
     gcount = 0
     ghash = {}
+    
+    binding.pry
     
     @@genres.each{
     if @@genres.include? @genre
