@@ -32,10 +32,7 @@ class  Song
   
   def self.genre_count 
     
-    gcount = 0
     ghash = {}
-    
-    binding.pry
     
     @@genres.each{|gtype|
       ghash[gtype] = @@genres.count(gtype)
@@ -46,7 +43,13 @@ class  Song
   end 
   
   def self.artist_count
+    ahash = {}
     
+    @@artists.each{|atype|
+      ghash[atype] = @@artists.count(atype)
+    }
+    puts ahash
+    return ahash
   end 
   
 end 
