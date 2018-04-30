@@ -37,7 +37,7 @@ class  Song
     
     binding.pry
     
-    ghash = @@genres.collect{|gtype|
+    @@genres.collect{|gtype|
       ghash[gtype] = @@genres.count(gtype)
     }
     puts ghash
